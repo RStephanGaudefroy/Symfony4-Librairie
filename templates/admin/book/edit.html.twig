@@ -1,0 +1,10 @@
+{%  extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container mt-4">
+        <h1>Librairie Lorem Ipsum</h1>
+        <p>Editer le livre</p>
+        {{ include ('admin/book/_form.html.twig', { form: form, button: 'editer' } ) }}
+        
+    </div>
+{% endblock %}
