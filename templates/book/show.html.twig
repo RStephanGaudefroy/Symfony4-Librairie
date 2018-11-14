@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title book.title %}
+
+{% block body %}
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-8">
+            </div>
+            <div class="col-md-4">
+                <h1>{{ book.title }}</h1>
+                <div class="text-primary">{{ book.price | number_format( 2, '.', ' ' )}} €</div>
+                <a href="#" class="btn btn-primary">Ajouter</a>
+            </div>
+        </div>
+        <p>{{ book.property | nl2br }}
+    </div>
+{% endblock %}
